@@ -79,13 +79,13 @@ class Herrero {
         this.setBarbudo(true);
     }
 
-    /*sumarDiaSinAccidente(){
-        this.setDiasDesdeUltimoAccidente((this.getDiasDesdeUltimoAccidente + 1));
+    sumarDiaSinAccidente(){
+        this.setDiasDesdeUltimoAccidente((this.getDiasDesdeUltimoAccidente() + 1));
     }
-    */
+    
     afeitarse(navaja){
         if (this.getBarbudo() === true && navaja.getFilo() === true) {
-           // this.sumarDiaSinAccidente();
+           this.sumarDiaSinAccidente();
             //this.diasDesdeUltimoAccidente++
             this.setBarbudo(false);
             navaja.setFilo(false);
